@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<link href="nvd3-master/src/nv.d3.css" rel="stylesheet" type="text/css" >
+<style>
+
+body {
+  overflow-y:scroll;
+}
+
+text {
+  font: 12px sans-serif;
+}
+
+svg {
+  display: block;
+}
+
+#chart1 svg {
+  height: 500px;
+  min-width: 200px;
+  min-height: 100px;
+/*
+  margin: 50px;
+  Minimum height and width is a good idea to prevent negative SVG dimensions...
+  For example width should be =< margin.left + margin.right + 1,
+  of course 1 pixel for the entire chart would not be very useful, BUT should not have errors
+*/
+
+}
+#chart1 {
+  margin-top: 200px;
+  margin-left: 100px;
+}
+
+
+</style>
+
+
+<body class='with-3d-shadow with-transition'>
+
+<h1>NVD3 Sample Graph</h1>
+
+<div  id="chart1">
+    <svg style="height: 500px;"></svg>
+</div>
+
+
+
+
+
+
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="nvd3-master/nv.d3.js"></script>
+<script src="nvd3-master/src/tooltip.js"></script>
+<script src="nvd3-master/src/utils.js"></script>
+<script src="nvd3-master/src/interactiveLayer.js"></script>
+<script src="nvd3-master/src/models/legend.js"></script>
+<script src="nvd3-master/src/models/axis.js"></script>
+<script src="nvd3-master/src/models/scatter.js"></script>
+<script src="nvd3-master/src/models/line.js"></script>
+<script src="nvd3-master/src/models/lineChart.js"></script>
+
+
